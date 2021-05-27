@@ -1,0 +1,7 @@
+route:
+  receiver: 'alertmanager2es'
+
+receivers:
+  - name: 'alertmanager2es'
+    webhook_configs:
+    - url: http://172.18.92.40:9097/webhook
